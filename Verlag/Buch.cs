@@ -12,20 +12,46 @@ namespace Verlag
         private string titel;
         private int auflage;
 
-        public Buch(string autor,string titel) 
+        public Buch(string autor,string titel)
         {
             this.autor = autor;
             this.titel = titel;
+            
+
+        }
+
+        public Buch(string autor, string titel, int auflage) :this(autor, titel)
+        {
             this.auflage = 1;
 
         }
 
-        public Buch()
+        public string Autor
         {
+            get
+            {
+                return autor;
 
+            }
+            set { autor = value; }
+        }
+
+        public string Titel
+        {
+            get { return titel; }
+
+            set { titel = value; }
         }
 
 
+        public int Auflage
+        {
+            get { return auflage; }
+
+            set { auflage = value; }
+        }
+
+        
 
 
     }

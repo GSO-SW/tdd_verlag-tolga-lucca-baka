@@ -27,10 +27,10 @@ namespace VerlagTests
 		[TestMethod]
 		public void Buch_KeineAuflageEntsprichtErsterAuflage()
 		{
-			//Arrange
-
-			//Act 
-			Buch b = new Buch("autor", "titel");
+            //Arrange
+            
+            //Act 
+            Buch b = new Buch("autor", "titel");
 
 			//Assert
 			Assert.AreEqual(1, b.Auflage);
