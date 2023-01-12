@@ -16,13 +16,14 @@ namespace Verlag
         {
             this.autor = autor;
             this.titel = titel;
+            this.auflage = 1;
             
 
         }
 
         public Buch(string autor, string titel, int auflage) :this(autor, titel)
         {
-            this.auflage = 1;
+            this.auflage = auflage;
 
         }
 
